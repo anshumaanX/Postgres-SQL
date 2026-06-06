@@ -207,7 +207,7 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 
 * `AGE`
 * `EXTRACT`
-* `AVG` with Date Calculations
+* Date Arithmetic
 
 ---
 
@@ -233,6 +233,154 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 
 ---
 
+## ✅ Aggregate Functions
+
+### Aggregate Functions Covered
+
+* `COUNT`
+* `SUM`
+* `AVG`
+* `MIN`
+* `MAX`
+
+### Concepts Covered
+
+* Aggregate Calculations
+* NULL Handling in Aggregates
+* Summary Reports
+* Business Metrics
+* COUNT(*) vs COUNT(column)
+
+---
+
+## ✅ CASE Expressions
+
+### CASE Statement Types
+
+* Searched CASE
+* Simple CASE
+
+### Use Cases
+
+* Data Categorization
+* Value Mapping
+* Conditional Aggregation
+* NULL Handling
+* Data Transformation
+
+### Business Scenarios
+
+* Sales Segmentation
+* Gender Mapping
+* Country Code Mapping
+* Customer Score Analysis
+
+---
+
+## ✅ Window Functions
+
+### Core Concepts
+
+* Window Functions vs GROUP BY
+* Partitions
+* Window Ordering
+* Frame Clauses
+* Window Processing Rules
+
+### Clauses Covered
+
+* `PARTITION BY`
+* `ORDER BY`
+* `ROWS`
+* `RANGE`
+
+### Analysis Types
+
+* Running Calculations
+* Rolling Calculations
+* Group-Level Analysis with Row-Level Detail
+
+---
+
+## ✅ Window Aggregate Functions
+
+### Functions Covered
+
+* `COUNT() OVER()`
+* `SUM() OVER()`
+* `AVG() OVER()`
+* `MIN() OVER()`
+* `MAX() OVER()`
+
+### Use Cases
+
+* Running Totals
+* Rolling Totals
+* Running Averages
+* Percentage Contribution Analysis
+* Duplicate Detection
+* Data Quality Checks
+* Deviation Analysis
+
+---
+
+## ✅ Ranking Functions
+
+### Functions Covered
+
+* `ROW_NUMBER()`
+* `RANK()`
+* `DENSE_RANK()`
+
+### Use Cases
+
+* Top-N Analysis
+* Bottom-N Analysis
+* Deduplication
+* Leaderboards
+* Unique Row Identification
+
+---
+
+## ✅ Distribution Functions
+
+### Functions Covered
+
+* `NTILE()`
+* `CUME_DIST()`
+* `PERCENT_RANK()`
+
+### Use Cases
+
+* Percentile Analysis
+* Product Segmentation
+* Customer Segmentation
+* Top X% Analysis
+* Workload Distribution
+* Batch Processing
+
+---
+
+## ✅ Window Value Functions
+
+### Functions Covered
+
+* `LAG()`
+* `LEAD()`
+* `FIRST_VALUE()`
+* `LAST_VALUE()`
+
+### Analytical Use Cases
+
+* Month-over-Month Analysis (MoM)
+* Trend Analysis
+* Time Series Analysis
+* Customer Retention Analysis
+* Gap Analysis
+* Baseline Comparisons
+
+---
+
 # 📌 Current Progress
 
 ### Completed Topics
@@ -251,18 +399,21 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 * Formatting & Casting
 * Date Calculations
 * NULL Handling Functions
+* Aggregate Functions
+* CASE Expressions
+* Window Functions
+* Window Aggregate Functions
+* Ranking Functions
+* Distribution Functions
+* Window Value Functions
 
 ---
 
 ### Upcoming Topics
 
-* Aggregate Functions
-* CASE Expressions
 * Subqueries
 * Common Table Expressions (CTEs)
 * Views
-* Window Functions
-* Ranking Functions
 * Stored Procedures
 * User Defined Functions (UDFs)
 * Temporary Tables
@@ -301,6 +452,7 @@ This repository aims to:
 * Every topic contains detailed comments and explanations.
 * Real-world examples are included wherever possible.
 * PostgreSQL-specific best practices are highlighted.
+* Window Functions are covered from fundamentals to advanced analytical use cases.
 * The repository is updated continuously as new concepts are learned.
 
 ---
