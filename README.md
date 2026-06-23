@@ -23,6 +23,8 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 
 ## ✅ DDL (Data Definition Language)
 
+### Commands Covered
+
 * `CREATE TABLE`
 * `ALTER TABLE`
 * `DROP TABLE`
@@ -36,6 +38,8 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 
 ## ✅ DML (Data Manipulation Language)
 
+### Commands Covered
+
 * `INSERT`
 * `UPDATE`
 * `DELETE`
@@ -44,8 +48,8 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 ### Data Loading Techniques
 
 * Manual Inserts
-* Insert from another table
-* Data migration between tables
+* Insert from Another Table
+* Data Migration Between Tables
 
 ---
 
@@ -94,20 +98,22 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 * Right Anti Join
 * Full Anti Join
 * Cross Join
-* Multi-table Join
+* Multi-Table Join
 
 ---
 
 ## ✅ Set Operators
+
+### Operators Covered
 
 * `UNION`
 * `UNION ALL`
 * `EXCEPT`
 * `INTERSECT`
 
-### Topics Covered
+### Concepts Covered
 
-* Rules of Set Operators
+* Set Operator Rules
 * Combining Data from Multiple Tables
 * Delta Detection
 * Data Completeness Checks
@@ -179,7 +185,7 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 ### Type Conversion
 
 * `CAST()`
-* PostgreSQL `::` Operator
+* PostgreSQL `::` Casting Operator
 
 ### Conversions Covered
 
@@ -191,29 +197,25 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 
 ## ✅ Date Calculations
 
-### Interval Operations
-
-* `INTERVAL`
-* Date Addition
-* Date Subtraction
-
-### Duration Calculations
-
-* Date Difference
-* Shipping Duration Analysis
-* Employee Age Calculation
-
 ### Functions Covered
 
+* `INTERVAL`
 * `AGE`
-* `EXTRACT`
 * Date Arithmetic
+* Date Difference Calculations
+
+### Use Cases
+
+* Date Addition
+* Date Subtraction
+* Shipping Duration Analysis
+* Employee Age Analysis
 
 ---
 
 ## ✅ NULL Handling Functions
 
-### NULL Functions
+### Functions Covered
 
 * `COALESCE`
 * `NULLIF`
@@ -235,7 +237,7 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 
 ## ✅ Aggregate Functions
 
-### Aggregate Functions Covered
+### Functions Covered
 
 * `COUNT`
 * `SUM`
@@ -246,16 +248,16 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 ### Concepts Covered
 
 * Aggregate Calculations
-* NULL Handling in Aggregates
 * Summary Reports
 * Business Metrics
-* COUNT(*) vs COUNT(column)
+* NULL Handling in Aggregates
+* `COUNT(*)` vs `COUNT(column)`
 
 ---
 
 ## ✅ CASE Expressions
 
-### CASE Statement Types
+### CASE Types
 
 * Searched CASE
 * Simple CASE
@@ -281,7 +283,7 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 
 ### Core Concepts
 
-* Window Functions vs GROUP BY
+* Window Functions vs `GROUP BY`
 * Partitions
 * Window Ordering
 * Frame Clauses
@@ -372,12 +374,81 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 
 ### Analytical Use Cases
 
-* Month-over-Month Analysis (MoM)
+* Month-over-Month (MoM) Analysis
 * Trend Analysis
 * Time Series Analysis
 * Customer Retention Analysis
 * Gap Analysis
 * Baseline Comparisons
+
+---
+
+## ✅ Subqueries
+
+### Types Covered
+
+* Scalar Subqueries
+* Multi-Row Subqueries
+* Derived Tables (Inline Views)
+* Correlated Subqueries
+* Non-Correlated Subqueries
+
+### Operators Covered
+
+* `IN`
+* `EXISTS`
+* `ANY`
+* `ALL`
+
+### Use Cases
+
+* Filtering Data
+* Comparing Against Aggregates
+* Ranking Results
+* Customer Order Analysis
+* Product Price Analysis
+
+---
+
+## ✅ Common Table Expressions (CTEs)
+
+### Non-Recursive CTEs
+
+* Single CTE
+* Multiple CTEs
+* Nested CTEs
+* Modular Query Design
+
+### Use Cases
+
+* Breaking Complex Queries into Steps
+* Customer Segmentation
+* Customer Ranking
+* Sales Analysis
+* Last Order Analysis
+
+---
+
+## ✅ Recursive CTEs
+
+### Concepts Covered
+
+* Anchor Query
+* Recursive Query
+* Recursion Stop Condition
+
+### Examples Implemented
+
+* Number Series Generation
+* Employee Hierarchy Traversal
+
+### Real-World Use Cases
+
+* Organizational Charts
+* Employee-Manager Relationships
+* Parent-Child Hierarchies
+* Category Trees
+* Graph Traversal
 
 ---
 
@@ -391,7 +462,7 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 * SQL Operators
 * Basic Joins
 * Advanced Joins
-* Multi-table Joins
+* Multi-Table Joins
 * Set Operators
 * String Functions
 * Number Functions
@@ -406,19 +477,21 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 * Ranking Functions
 * Distribution Functions
 * Window Value Functions
+* Subqueries
+* Common Table Expressions (CTEs)
+* Recursive CTEs
 
 ---
 
 ### Upcoming Topics
 
-* Subqueries
-* Common Table Expressions (CTEs)
 * Views
 * Stored Procedures
 * User Defined Functions (UDFs)
 * Temporary Tables
 * Indexes
-* Transactions
+* Constraints (Advanced)
+* Transactions (TCL)
 * Query Optimization
 * Performance Tuning
 * PostgreSQL Advanced Concepts
@@ -452,8 +525,8 @@ This repository aims to:
 * Every topic contains detailed comments and explanations.
 * Real-world examples are included wherever possible.
 * PostgreSQL-specific best practices are highlighted.
-* Window Functions are covered from fundamentals to advanced analytical use cases.
-* The repository is updated continuously as new concepts are learned.
+* Concepts progress from beginner fundamentals to advanced analytical SQL.
+* The repository is continuously updated as new topics are learned.
 
 ---
 
