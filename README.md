@@ -125,6 +125,7 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 ### Text Transformation
 
 * `CONCAT`
+* `CONCAT_WS`
 * `UPPER`
 * `LOWER`
 * `TRIM`
@@ -326,39 +327,29 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 
 ---
 
-## ✅ Ranking Functions
+## ✅ Ranking & Distribution Functions
 
-### Functions Covered
+### Ranking Functions
 
 * `ROW_NUMBER()`
 * `RANK()`
 * `DENSE_RANK()`
 
-### Use Cases
-
-* Top-N Analysis
-* Bottom-N Analysis
-* Deduplication
-* Leaderboards
-* Unique Row Identification
-
----
-
-## ✅ Distribution Functions
-
-### Functions Covered
+### Distribution Functions
 
 * `NTILE()`
 * `CUME_DIST()`
 * `PERCENT_RANK()`
 
-### Use Cases
+### Business Use Cases
 
-* Percentile Analysis
-* Product Segmentation
+* Top-N Analysis
+* Bottom-N Analysis
+* Leaderboards
+* Deduplication
 * Customer Segmentation
-* Top X% Analysis
-* Workload Distribution
+* Product Segmentation
+* Percentile Analysis
 * Batch Processing
 
 ---
@@ -403,7 +394,7 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 ### Use Cases
 
 * Filtering Data
-* Comparing Against Aggregates
+* Aggregate Comparisons
 * Ranking Results
 * Customer Order Analysis
 * Product Price Analysis
@@ -417,52 +408,89 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 * Single CTE
 * Multiple CTEs
 * Nested CTEs
-* Modular Query Design
 
-### Use Cases
-
-* Breaking Complex Queries into Steps
-* Customer Segmentation
-* Customer Ranking
-* Sales Analysis
-* Last Order Analysis
-
----
-
-## ✅ Recursive CTEs
-
-### Concepts Covered
+### Recursive CTEs
 
 * Anchor Query
 * Recursive Query
-* Recursion Stop Condition
+* Stop Condition
 
-### Examples Implemented
+### Real-World Examples
 
 * Number Series Generation
-* Employee Hierarchy Traversal
+* Employee Hierarchies
+* Customer Ranking
+* Customer Segmentation
+* Modular Query Design
 
-### Real-World Use Cases
+---
 
-* Organizational Charts
-* Employee-Manager Relationships
-* Parent-Child Hierarchies
-* Category Trees
-* Graph Traversal
+## ✅ Views
+
+### Concepts Covered
+
+* Creating Views
+* `CREATE OR REPLACE VIEW`
+* Dropping Views
+* Virtual Tables
+* Reusable SQL Logic
+
+### Business Use Cases
+
+* Monthly Sales Reporting
+* Multi-Table Reporting Views
+* Security-Based Views
+* Data Abstraction
+* Simplifying Complex Queries
+
+---
+
+## ✅ CTAS (CREATE TABLE AS)
+
+### Concepts Covered
+
+* Creating Tables from Query Results
+* Materializing Query Output
+* Snapshot Creation
+
+### Business Use Cases
+
+* Performance Optimization
+* Data Warehousing
+* Reporting Tables
+* Physical Data Marts
+* Historical Snapshots
+
+---
+
+## ✅ Temporary Tables
+
+### Concepts Covered
+
+* `CREATE TEMP TABLE`
+* `CREATE TEMPORARY TABLE`
+* Session Scope
+* Temporary Schema (`pg_temp`)
+
+### Business Use Cases
+
+* Intermediate Calculations
+* ETL Processing
+* Staging Data
+* Data Cleansing
+* Breaking Complex Processes into Steps
 
 ---
 
 # 📌 Current Progress
 
-### Completed Topics
+### ✅ Completed Topics
 
 * SQL Fundamentals
 * DDL (Data Definition Language)
 * DML (Data Manipulation Language)
 * SQL Operators
-* Basic Joins
-* Advanced Joins
-* Multi-Table Joins
+* SQL Joins
 * Set Operators
 * String Functions
 * Number Functions
@@ -480,20 +508,24 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 * Subqueries
 * Common Table Expressions (CTEs)
 * Recursive CTEs
+* Views
+* CTAS (CREATE TABLE AS)
+* Temporary Tables
 
 ---
 
-### Upcoming Topics
+### 🚀 Upcoming Topics
 
-* Views
-* Stored Procedures
-* User Defined Functions (UDFs)
-* Temporary Tables
 * Indexes
+* Sequences
 * Constraints (Advanced)
 * Transactions (TCL)
+* Stored Procedures
+* User Defined Functions (UDFs)
+* Triggers
 * Query Optimization
 * Performance Tuning
+* PostgreSQL Administration
 * PostgreSQL Advanced Concepts
 
 ---
@@ -502,12 +534,12 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 
 This repository aims to:
 
-* Build strong SQL fundamentals
-* Learn PostgreSQL through practical examples
-* Write clean and professional SQL queries
-* Understand real-world business use cases
-* Prepare for Data Analyst and Data Engineer roles
-* Develop interview-ready SQL skills
+* Build strong SQL fundamentals.
+* Master PostgreSQL through practical examples.
+* Write clean, readable, and optimized SQL queries.
+* Understand real-world business scenarios and analytical use cases.
+* Prepare for Data Analyst, Data Engineer, and Backend Developer roles.
+* Develop interview-ready SQL skills from beginner to advanced level.
 
 ---
 
@@ -521,18 +553,18 @@ This repository aims to:
 
 # 💡 Notes
 
-* All queries are professionally formatted.
-* Every topic contains detailed comments and explanations.
-* Real-world examples are included wherever possible.
-* PostgreSQL-specific best practices are highlighted.
-* Concepts progress from beginner fundamentals to advanced analytical SQL.
-* The repository is continuously updated as new topics are learned.
+* Every topic includes well-commented SQL queries.
+* Concepts are explained from beginner to advanced level.
+* Real-world business scenarios accompany most examples.
+* PostgreSQL best practices and syntax are highlighted throughout.
+* The repository progresses from SQL fundamentals to advanced analytical SQL and database design concepts.
+* New topics are added continuously as the learning journey progresses.
 
 ---
 
 # 🤝 Contributions
 
-This repository is primarily for personal learning and documentation. Suggestions, improvements, and discussions are always welcome.
+This repository primarily serves as a personal learning resource and documentation. Suggestions, improvements, and discussions are always welcome.
 
 ---
 
