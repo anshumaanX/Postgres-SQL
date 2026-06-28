@@ -482,6 +482,40 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 
 ---
 
+## ✅ Stored Procedures
+
+### Concepts Covered
+
+* Creating Stored Procedures
+* `CREATE OR REPLACE PROCEDURE`
+* Input (`IN`) Parameters
+* Output (`OUT`) Parameters
+* Local Variables (`DECLARE`)
+* Conditional Logic (`IF...ELSE`)
+* Exception Handling
+* `RAISE NOTICE`
+* Calling Procedures (`CALL`)
+* Dropping Procedures (`DROP PROCEDURE`)
+
+### PL/pgSQL Features
+
+* Variables
+* Control Flow
+* SQL inside Procedures
+* `SELECT ... INTO`
+* Error Handling using `EXCEPTION`
+* Default Values using `COALESCE`
+
+### Business Use Cases
+
+* Automated Report Generation
+* Customer Statistics
+* Sales Summary Reports
+* Data Validation
+* Data Cleaning
+* Reusable Business Logic
+
+---
 # 📌 Current Progress
 
 ### ✅ Completed Topics
@@ -502,8 +536,7 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 * CASE Expressions
 * Window Functions
 * Window Aggregate Functions
-* Ranking Functions
-* Distribution Functions
+* Ranking & Distribution Functions
 * Window Value Functions
 * Subqueries
 * Common Table Expressions (CTEs)
@@ -511,21 +544,13 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 * Views
 * CTAS (CREATE TABLE AS)
 * Temporary Tables
+* Stored Procedures
 
 ---
 
 ### 🚀 Upcoming Topics
 
-* Indexes
-* Sequences
-* Constraints (Advanced)
-* Transactions (TCL)
-* Stored Procedures
-* User Defined Functions (UDFs)
 * Triggers
-* Query Optimization
-* Performance Tuning
-* PostgreSQL Administration
 * PostgreSQL Advanced Concepts
 
 ---
