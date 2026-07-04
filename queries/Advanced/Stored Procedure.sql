@@ -1,4 +1,3 @@
-```sql
 -- ============================================================
 -- STORED PROCEDURES
 -- ============================================================
@@ -215,4 +214,3 @@ FROM sales.orders AS o
 INNER JOIN sales.customers AS c
     ON o.customerid = c.customerid
 WHERE c.country = 'USA';
-```
