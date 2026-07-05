@@ -515,6 +515,38 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 * Data Cleaning
 * Reusable Business Logic
 
+
+## ✅ Triggers
+
+### Concepts Covered
+
+* What are Triggers?
+* Trigger Timing (BEFORE, AFTER)
+* Trigger Events (INSERT, UPDATE, DELETE)
+* Row-Level Triggers (FOR EACH ROW)
+* Creating Trigger Functions
+* Creating Triggers
+* Dropping Triggers
+
+### PL/pgSQL Features
+
+* RETURNS TRIGGER
+* NEW and OLD Records
+* Trigger Variables
+* RETURN NEW
+* RETURN OLD
+
+### Business Use Cases
+
+* Audit Logging
+* Automatic Data Formatting
+* Data Validation
+* Enforcing Business Rules
+* Maintaining History Tables
+* Automatic Timestamp Updates
+* Inventory Management
+* Synchronizing Related Tables
+
 ---
 # 📌 Current Progress
 
@@ -545,12 +577,12 @@ This repository documents my hands-on journey of learning PostgreSQL while build
 * CTAS (CREATE TABLE AS)
 * Temporary Tables
 * Stored Procedures
+* Triggers
 
 ---
 
 ### 🚀 Upcoming Topics
 
-* Triggers
 * PostgreSQL Advanced Concepts
 
 ---
